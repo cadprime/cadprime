@@ -15,43 +15,14 @@ export const IndexPageTemplate = ({
   description,
   intro,
 }) => (
-  <div>
-    <section className="section section--gradient">
-      <div className="container">
-        <div className="section">
-          <div className="columns">
-            <div className="column is-10 is-offset-1">
-              <div className="content">
-                <img
-                  src={
-                    !!image.childImageSharp
-                      ? image.childImageSharp.fluid.src
-                      : image
-                  }
-                />
-                <div className="content">
-                  <div className="tile">
-                    <h1 className="title">{mainpitch.title}</h1>
-                  </div>
-                  <div className="tile">
-                    <h3 className="subtitle">{mainpitch.description}</h3>
-                  </div>
-                </div>
-                <div className="columns">
-                  <div className="column is-12">
-                    <h3 className="has-text-weight-semibold is-size-2">
-                      {heading}
-                    </h3>
-                    <p>{description}</p>
-                  </div>
-                </div>
-                <div className="column is-12">{/* <BlogRoll /> */}</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+  <div className="section">
+    <div>
+      <img
+        className="logo"
+        src={!!image.childImageSharp ? image.childImageSharp.fluid.src : image}
+      />
+      <h2 className="uc">UNDER CONSTRUCTION</h2>
+    </div>
   </div>
 );
 
