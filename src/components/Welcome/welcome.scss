@@ -1,0 +1,29 @@
+.welcome 
+    background-image: url("../../img/header-background.png")
+    height: 100vh
+    width: 100vw
+    background-size: cover
+    display: grid
+    grid-template-columns: repeat(12, 1fr)
+
+    h1 
+        font-size: 4em
+        font-weight: bold
+        color: #fff
+        line-height: 1
+        padding-bottom: .5em
+
+        .welcome__green
+            color: #00FCCF
+
+.welcome__left
+    grid-column: 2 / span 5
+    display: flex
+    flex-direction: column
+    justify-content: center
+
+
+
+.welcome__subtext
+    color: #fff
+    padding-right: 150px

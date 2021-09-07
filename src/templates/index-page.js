@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import { Link, graphql } from "gatsby";
 
 import Layout from "../components/Layout";
-import Features from "../components/Features";
+import Welcome from "../components/Welcome/Welcome";
 import BlogRoll from "../components/BlogRoll";
 
 export const IndexPageTemplate = ({
@@ -14,17 +14,7 @@ export const IndexPageTemplate = ({
   mainpitch,
   description,
   intro,
-}) => (
-  <div className="section">
-    <div>
-      <img
-        className="logo"
-        src={!!image.childImageSharp ? image.childImageSharp.fluid.src : image}
-      />
-      <h2 className="uc">UNDER CONSTRUCTION</h2>
-    </div>
-  </div>
-);
+}) => <Welcome />;
 
 IndexPageTemplate.propTypes = {
   image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
