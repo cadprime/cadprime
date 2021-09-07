@@ -6,15 +6,9 @@ import Layout from "../components/Layout";
 import Welcome from "../components/Welcome/Welcome";
 import BlogRoll from "../components/BlogRoll";
 
-export const IndexPageTemplate = ({
-  image,
-  title,
-  heading,
-  subheading,
-  mainpitch,
-  description,
-  intro,
-}) => <Welcome />;
+export const IndexPageTemplate = ({ image, title, heading, subheading }) => (
+  <Welcome image={image} heading={heading} subheading={subheading} />
+);
 
 IndexPageTemplate.propTypes = {
   image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),

@@ -1,5 +1,4 @@
 .welcome 
-    background-image: url("../../img/header-background.png")
     height: 100vh
     width: 100vw
     background-size: cover
@@ -11,7 +10,6 @@
         font-weight: bold
         color: #fff
         line-height: 1
-        padding-bottom: .5em
 
         .welcome__green
             color: #00FCCF
@@ -27,3 +25,4 @@
 .welcome__subtext
     color: #fff
     padding-right: 150px
+    padding: 30px 150px 30px 0

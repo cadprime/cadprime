@@ -5,9 +5,13 @@
     min-height: 4.25rem !important
 
     .navbar-start
-        width: 100% !important
+        width: 85% !important
         justify-content: center
 
     .navbar-item
         color: #fff !important
         padding: 0.5rem 1.75rem !important
+        transition: 0.3s
+
+    a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-item.is-active
+        color: #00fbc9 !important
