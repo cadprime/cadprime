@@ -7,6 +7,9 @@ import Welcome from "../components/Welcome/Welcome";
 import { RowTitle } from "../components/RowTitle.style";
 import { Card } from "../components/Card.style";
 import Button from "../components/Button";
+import { Widgets } from "../components/Widgets.style";
+
+import clock from "../img/icons/clock.svg";
 
 export const IndexPageTemplate = ({ image, title, heading, subheading }) => (
   <>
@@ -21,7 +24,7 @@ export const IndexPageTemplate = ({ image, title, heading, subheading }) => (
           </h1>
         </RowTitle>
       </div>
-      <div className="horizontal-scroll">
+      <div className="horizontal-scroll-full">
         <div className="cards">
           <Card>
             <h2>
@@ -54,6 +57,66 @@ export const IndexPageTemplate = ({ image, title, heading, subheading }) => (
             <Button text="buy now" />
           </Card>
         </div>
+      </div>
+    </div>
+    {/* Benefits Section */}
+    <div className="benefits colored">
+      <div className="benefits__left">
+        <h1>Major Benefits</h1>
+        <p>
+          Payroll systems help the company generate an automated payroll
+          computation with fewer human-error results that will lead to sound
+          decisions within the organization.
+        </p>
+      </div>
+      <div className="benefits__right">
+        <div className="horizontal-scroll">
+          <div className="benefits__widgets">
+            <Widgets>
+              <img src={clock} />
+              <h2>Lorem Ipsum</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </Widgets>
+            <Widgets>
+              <img src={clock} />
+              <h2>Lorem Ipsum</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </Widgets>
+            <Widgets>
+              <img src={clock} />
+              <h2>Lorem Ipsum</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </Widgets>
+          </div>
+        </div>
+      </div>
+    </div>
+    {/* Demo Section */}
+    <div className="demo">
+      <RowTitle>
+        <h1>
+          Feeling kinda sus? <br />
+          We got you!
+        </h1>
+      </RowTitle>
+
+      <p>Test out Cadprime Payroll System for 60 days, no charges included!</p>
+      <div className="mt-5">
+        <Button text="sign up for a demo" type="secondary" />
+      </div>
+      <div className="mb-5">
+        <span className="sub-text">
+          You can cancel your trial anytime. Even right now. Just kidding.
+        </span>
       </div>
     </div>
   </>

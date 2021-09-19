@@ -31,31 +31,94 @@ body
 .navbar-item img
   max-height: unset !important
 
-.horizontal-scroll 
-    margin-left: 20px;
-    overflow-y: hidden;
-    overflow-x: scroll;
+.sub-text
+  font-size: .7em
+  font-style: italic
+  color: 787878
 
+  
+.colored 
+    background-color: #7C4FF9
+
+.benefits 
+  display: flex
+  padding: 5em
+
+.benefits__left 
+  display: flex
+  padding-right: 4em
+  flex-direction: column
+  justify-content: center
+  width: 50%
+
+.benefits__left h1 
+    color: #00FBC9
+    font-size: 2em
+    font-weight: bold
+
+.benefits__left p 
+    color: #fff
+
+.benefits__right
+  width: 50%
+
+.benefits__widgets
+  display: inline-flex
+  gap: 1em
 
 // Cards
 .cards
-  display: flex;
-  padding: 2em 0;
-  gap: 1em;
-  justify-content: center;
+  display: flex
+  padding: 2em 0
+  gap: 1em
+  justify-content: center
 
+
+.demo
+  text-align: center
+  padding: 2em
+
+.horizontal-scroll
+  margin-left: 20px
+  overflow-y: hidden
+  overflow-x: scroll
+
+.horizontal-scroll-full
+  overflow-y: hidden
+  overflow-x: hidden
 
 @import "~bulma"
 +mobile
+  .benefits
+    flex-direction: column
+    padding: 4em 2em
+
+  .benefits__left
+    padding-right: 0em
+    width: 100%
+
+  .benefits__right
+    padding-top: 1em
+    width: 100%
+
+  .horizontal-scroll 
+    margin-left: 20px
+    overflow-y: hidden
+    overflow-x: scroll
+
+  .horizontal-scroll-full
+    margin-left: 20px
+    overflow-y: hidden
+    overflow-x: scroll
   .cards 
-    display: inline-flex;
-    gap: .5em;
+    display: inline-flex
+    gap: .5em
   .blog-list-item header
     display: block
   .blog-list-item .featured-thumbnail
-    text-align: center;
-    max-width: 70%;
-    margin: 0 0 1em;
+    text-align: center
+    max-width: 70%
+    margin: 0 0 1em
 
   .navbar .navbar-start
     width: 100% !important

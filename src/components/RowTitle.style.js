@@ -6,6 +6,8 @@ export const RowTitle = styled.div`
     color: #2a084f;
     text-align: center;
     font-weight: bold;
+    padding: 1em 0;
+    line-height: 1;
   }
 
   @media (max-width: 768px) {

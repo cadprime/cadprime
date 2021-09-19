@@ -23,7 +23,7 @@ const StyledButton = styled.button`
 
   ${(props) =>
     props.type === "secondary"
-      ? "background-color: #00FCCF; color: #7C4FF9; box-shadow: 0px 12px 31px -10px rgba(82, 250, 216, 0.54)"
+      ? "background-color: #00FCCF; color: #2A084F; box-shadow: 0px 12px 31px -10px rgba(82, 250, 216, 0.54)"
       : "background-color: #7C4FF9; color: #ffffff; box-shadow: 0px 12px 31px -10px rgba(124, 79, 249, 0.5)"}
 `;
 
