@@ -38,8 +38,10 @@
         grid-column: 2/span 10
 
 +mobile
+    .welcome
+        height: 90vh
     .welcome h1 
-        font-size: 2.5em
+        font-size: 2em
         line-height: 1.5
 
     .welcome__left 
