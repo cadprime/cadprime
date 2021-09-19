@@ -6,7 +6,7 @@ export const Card = styled.div`
   justify-content: space-evenly;
   align-items: center;
   max-width: 380px;
-  min-width: 250px;
+  min-width: 300px;
   padding: 3em;
   border: 2px solid #7c4ff9;
   box-sizing: border-box;
@@ -15,6 +15,7 @@ export const Card = styled.div`
   color: ${(props) => (props.type && "#ffffff") || "#232323"};
 
   > h2 {
+    text-align: center;
     font-size: 1.5em;
     line-height: 1.5;
     letter-spacing: 0.165em;
