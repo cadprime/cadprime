@@ -5,8 +5,8 @@ export const Card = styled.div`
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  width: 400px;
-  min-width: 370px;
+  max-width: 380px;
+  min-width: 250px;
   padding: 3em;
   border: 2px solid #7c4ff9;
   box-sizing: border-box;
