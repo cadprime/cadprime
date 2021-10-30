@@ -57,6 +57,21 @@ export const IndexPageTemplate = ({ image, title, heading, subheading }) => (
             </p>
             <Button text="buy now" type="secondary" />
           </Card>
+          <Card>
+            <h2>
+              Sample <span className="bold"> basic</span>
+            </h2>
+            <span className="subtext">$80.00/mo.*</span>
+            <p>
+              Cadprime Payroll Basic provides all basic requirements in
+              generating standard payroll procedures. It is an all-in payroll
+              service system that will start from biometric integration of your
+              phone to payroll-related report generation supported by our
+              system’s functional, practical, and all-ages friendly user
+              interface of our system.
+            </p>
+            <Button text="buy now" />
+          </Card>
         </div>
       </div>
     </div>
